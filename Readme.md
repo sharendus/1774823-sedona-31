@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Любовь Шарендо](https://up.htmlacademy.ru/htmlcss/31/user/1774823).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana).
 
 ---
 
