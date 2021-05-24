@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта шатата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Гостиницы</h1>
+      <section>
+        <h2>Поиск гостиниц</h2>
+        <form method="get" action="#">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input id="pool" type="checkbox" name="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input id="Parking" type="checkbox" name="Parking">
+                <label for="Parking">Парковка</label>
+              </li>
+              <li>
+                <input id="Wi-Fi" type="checkbox" name="Wi-Fi">
+                <label for="Wi-Fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input id="hotel" type="checkbox" name="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input id="motel" type="checkbox" name="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input id="Apartments" type="checkbox" name="Apartments" checked>
+                <label for="Apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки, ₽:</legend>
+            <p>от 0 <input id="cost" type="range" name="cost" min="0" max="4000" step="500"> до 3000
+            <label for="cost">Стоимость в сутки, ₽:</label></p>
+          </fieldset>
+          <button type="button">Показать</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>результаты поиска</h2>
+        <div>
+          <p>найдено: 3</p>
+          <p>Сортировка</p>
+          <ul>
+            <li>
+              <a>по цене</a>
+            </li>
+            <li>
+              <a>по типу</a>
+            </li>
+            <li>
+              <a>по рейтингу</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul>
+          <li>
+            <h3>Amara Resort & Spa</h3>
+            <p>
+              <img src="https://via.placeholder.com/150x100" alt="Amara Resort & Spa">
+            </p>
+            <p>Гостиница</p>
+            <p>От 4000 ₽</p>
+            <p>
+              <a href="#">Подробнее</a>
+            </p>
+            <p>
+              <a href="#">Забронировать</a>
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+    </main>
+    <footer>
+        <div aria-label="Контакты">
+          <a href="#">#visitSEDONA</a>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </div>
+        <ul aria-label="Социальные сети">
+          <li>
+            <a href="#">Твитер</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Ютуб</a>
+          </li>
+        </ul>
+      <div aria-label="Разработчик">
+        <span>Website by</span>
+        <a href="#">
+          <img src="https://via.placeholder.com/150x100" alt="html.Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
