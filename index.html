@@ -5,86 +5,96 @@
         <title>HTML Academy: Седона</title>
         <link rel="icon" href="favicon.ico">
         <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+        <link rel="text/html" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+        <link href="normalize.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body class="page-body">
+        <div class="container">
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo">
+                <a class="main-header-logo" href="index.html">
                     <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона"/>
                 </a>
                 <ul class="site-navigation">
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Фото и видео</a></li>
-                    <li><a href="#">Карта штата</a></li>
-                    <li><a href="catalog.html">Гостиницы</a></li>
+                    <li><a class="site-navigation-link" href="#">Информация</a></li>
+                    <li><a class="site-navigation-link" href="#">Фото и видео</a></li>
+                    <li><a class="site-navigation-link" href="#">Карта штата</a></li>
+                    <li><a class="site-navigation-link" href="catalog.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main class="container">
+        <main>
             <section class="promo">
-                 <img src="img/promo.svg" width="456" height="350" alt="Промо">
-                <h1 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-                <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                <img src="img/promo.svg" width="456" height="350" alt="Промо">
+                <h1 class="promo-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <p class="promo-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </section>
 
-            <section class="advantages" aria-label="преимущества">
-                <article>
-                    <div>
-                        <h2 class="advantages-title">Настоящий городок</h2>
-                        <p>— №1 —</p>
-                        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <section id="advantages" class="advantages" aria-label="преимущества">
+                <article class="advantage">
+                    <div class="advantage-wrapper">
+                        <h2 class="advantage-title">Настоящий городок</h2>
+                        <p class="advantage-number">— №1 —</p>
+                        <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                     </div>
                     <img src="img/image.jpg" width="800" height="256" alt="изображение города" />
                 </article>
 
                 <ul class="feature-list">
                     <li class="feature-item">
+                        <svg width="75" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M45.7 65h-16V41.2h16V65zm-3-20.9H32.6v18h10.1v-18z" fill="#81B3D2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.8 39.3l2-2.1-9.9-9.9V0H51.1v13.6L37.5 0 .2 37.2l2 2 7.9-7.7V69H6V72H70v-3h-5V31.6l7.8 7.8zM62 69H13V28.5L37.5 4.1 62 28.5v40.6zm-8-52.6l8 7.9V2.9h-8v13.6z" fill="#81B3D2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M37.7 34.8a7.7 7.7 0 117.7-7.7c0 4.2-3.5 7.7-7.7 7.7zm5-7.7a5 5 0 00-5-5 5 5 0 105 5zM17 41.2h3v4h-3v-4zm8.9 0h-3v4h3v-4zm-9 6h3V51h-3v-4zm9 0h-3V51h3v-4zm23-6h3v4h-3v-4zm9 0h-3v4h3v-4zm-9 6h3V51h-3v-4zm9 0h-3V51h3v-4z" fill="#81B3D2"/></svg>
                         <h2>Жильё</h2>
                         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                     </li>
                     <li class="feature-item">
+                        <svg width="75" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 31.5h60.9v-1.8-1.2C69.2 12.7 55.2 0 37.9 0 20.8 0 6.8 12.7 6 28.5a26.9 26.9 0 000 3h3zm13 11l-5.4-4-5.3 4-6.2-4.7 1.7-2.5 4.5 3.4 5.3-4 5.4 4 5.3-4 5.3 4 5.3-4 5.4 4 5.3-4 5.3 4 5.4-4 5.3 4 4.5-3.4 1.7 2.5-6.2 4.7-5.3-4-5.4 4-5.3-4-5.3 4-5.4-4-5.3 4-5.3-4-5.3 4zM5 46.7H71c2.2 0 4 2 4 4.3v3.5c0 2.4-1.8 4.3-4 4.3h-1v1c0 5.6-4.3 10.2-9.6 10.2H15.6A9.9 9.9 0 016 59.9v-1H5c-2.2 0-4-2-4-4.4V51c0-2.4 1.8-4.3 4-4.3zM60.4 67c3.7 0 6.7-3.1 6.7-7v-1H8.9v1c0 3.9 3 7 6.7 7h44.7zM72 54.5c0 .7-.6 1.3-1.2 1.3H5c-.7 0-1.3-.6-1.3-1.3V51c0-.7.6-1.2 1.3-1.2h65.8c.6 0 1.2.5 1.2 1.2v3.5zm-5.1-26C66.3 14.4 53.5 3 38 3 22.4 3 9.6 14.4 9 28.5h58z" fill="#81B3D2"/><path d="M38 17.3c1 0 1.9-1 1.9-2a2 2 0 00-2-2c-1 0-1.9.8-1.9 2 0 1 .9 2 2 2zM30.2 12.3c1 0 2-1 2-2a2 2 0 00-2-2.1c-1.1 0-2 1-2 2 0 1.2.9 2 2 2zM45.7 12.3c1.1 0 2-1 2-2a2 2 0 00-2-2.1c-1 0-2 1-2 2 0 1.2 1 2 2 2z" fill="#81B3D2"/></svg>
                         <h2>Еда</h2>
                         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </li>
                     <li class="feature-item">
+                        <svg width="64" height="77" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M61.1 23.5H36.3c13.8-6.9 15-11.3 14.4-13.7-1.1-4-5.7-7-10-5.4-5.6 2.1-7.1 10.4-8.6 16.4-2-6-3.8-13.8-8.2-17.7a7.3 7.3 0 00-5.7-2c-4 .3-9.8 5.3-7.5 11 2.3 5.3 9.7 8.7 14.6 11.4H2.9A2.9 2.9 0 000 26.4v11.3c0 1.6 1.3 2.9 2.9 2.9h.3V77H61V40.6h.1c1.6 0 2.9-1.3 2.9-3V26.5c0-1.6-1.3-2.9-2.9-2.9zM42.4 6.9c2.1-.3 5 1.3 5.3 3.3.4 2.7-3.4 5.2-5.1 6.4-2.5 1.7-5 2.6-7.3 4 .9-3.7 2.5-13 7.1-13.7zM19.5 17c-2.2-1.5-6.5-4.4-6.4-7.8.1-3.6 5.7-6.5 8.8-3.8 3.9 3.3 5.7 11 7.1 16.5-3.2-1.5-6.3-2.8-9.5-4.9zm6 57.1H6.1V40.6h19.4V74zm0-36.5H3v-11h22.5v11zm10.2 0V74h-7.2V26.5h7.2v11zM58 74H38.6V40.6H58V74zm3-36.5H38.5v-11H61v11z" fill="#81B3D2"/></svg>
                         <h2>Сувениры</h2>
                         <p>Не только китайского, но и местного производства!</p>
                     </li>
                 </ul>
 
-                <article>
-                    <div>
-                        <h2 class="advantages-title">Там есть Мост дьявола</h2>
-                        <p>— №2 —</p>
-                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <article class="advantage">
+                    <div class="advantage-wrapper">
+                        <h2 class="advantage-title">Там есть Мост дьявола</h2>
+                        <p class="advantage-number">— №2 —</p>
+                        <p class="advantage-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                     <img src="img/image-2.jpg" width="800" height="256" alt="изображение моста"/>
                 </article>
 
                 <ul class="advantages-list">
-                    <li class="advantages-item">
-                        <h2>небольшая площадь</h2>
-                        <p>— №3 —</p>
-                        <p>все достопримечательности находятся очень близко</p>
+                    <li class="advantage-item">
+                        <h2 class="advantage-title">небольшая площадь</h2>
+                        <p class="advantage-number">— №3 —</p>
+                        <p class="advantage-description">все достопримечательности находятся очень близко</p>
                     </li>
-                    <li class="advantages-item">
-                        <h2>красивая дорога</h2>
-                        <p>— №4 —</p>
-                        <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+                    <li class="advantage-item">
+                        <h2 class="advantage-title">красивая дорога</h2>
+                        <p class="advantage-number">— №4 —</p>
+                        <p class="advantage-description">ехать в седону из лас-вегаса совсем не скучно!</p>
                     </li>
-                    <li class="advantages-item">
-                        <h2>мало туристов</h2>
-                        <p>— №5 —</p>
-                        <p>большинство едет в гранд каньон и толпится там</p>
+                    <li class="advantage-item">
+                        <h2 class="advantage-title">мало туристов</h2>
+                        <p class="advantage-number">— №5 —</p>
+                        <p class="advantage-description">большинство едет в гранд каньон и толпится там</p>
                     </li>
                 </ul>
             </section>
 
             <section class="search">
+
                 <h2 class="search-title">Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <a href="#">Поиск гостиницы в седоне</a>
+                <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+
+                <a class="search-button" href="#">Поиск гостиницы в седоне</a>
+
                 <div>
                     <form name="search-form" action="https://echo.htmlacademy.ru" method="post">
                         <label for="arrival-date"></label>
@@ -105,28 +115,35 @@
 
         <footer class="main-footer">
             <div class="footer-contacts" aria-label="Контакты">
-                <a href="#">#visitSEDONA</a>
-                <a href="tel:+78005558628">+7 800 555-86-28</a>
+                <a class="footer-contacts-link" href="#">#visitSEDONA</a>
+                <a class="footer-contacts-link" href="tel:+78005558628">+7 800 555-86-28</a>
             </div>
 
             <ul class="footer-social" aria-label="Социальные сети">
                 <li>
-                    <a href="#" aria-label="Твитер"></a>
+                    <a class="social-button" href="#" aria-label="Твитер">
+                        <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1.1c1.6-.5 3 .3 3.5 1.2l2-.7c0 .7-.3 1.3-.8 1.8.7.2 1.3-.5 1.3-.5a3 3 0 01-1.6 2c-.2 6.8-3.2 11.2-10 11.1h-.5c-.4 0-4.2-.5-4.9-1.9 2.3.2 3.9-.4 4.7-1.2-1-.3-2.7-.4-3-3 .4.2.6.3 1.2.2C1.7 9.2.4 8.5.4 6.3c.3.4 1.1.6 1.4.5-.7-.2-2-3.4-1-5 2 1.9 3.8 3.7 7.2 3.8.3-2.3 1.2-3.8 3-4.5z" fill="#fff"/></svg>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" aria-label="Фейсбук"></a>
+                    <a class="social-button" href="#" aria-label="Фейсбук">
+                        <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" aria-label="Ютуб"></a>
+                    <a class="social-button" href="#" aria-label="Ютуб">
+                        <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3 4v8l9-4-9-4z" fill="#fff"/></svg>
+                    </a>
                 </li>
             </ul>
 
-            <div class="footer-copyright " aria-label="Разработчик">
-                <span>Website by</span>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="html.Academy"/>
+            <div class="footer-copyright" aria-label="Разработчик">
+                <span class="footer-copyright-by">Website by</span>
+                <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <svg width="115" height="33" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.87v2.57h2.46v-2.57H0zm11.65-8.34a4.5 4.5 0 00-3.62 1.73h-.08V0H5.92v15.44h2.03v-5.3c0-2.12 1.32-3.64 3.27-3.64 1.84 0 2.9 1.37 2.9 3.22v5.72h2.04V9.35c0-2.94-1.82-4.82-4.51-4.82zm14.97.3H21.8V1.07h-2.03v3.76h-1.93V6.8h1.93v5.98c0 1.72.96 2.66 2.7 2.66h4.14v-2h-3.74c-.69 0-1.07-.38-1.07-1.04V6.8h4.8V4.83zm14.5-.28a3.9 3.9 0 00-3.55 2.06h-.06a3.6 3.6 0 00-3.36-2.06 3.6 3.6 0 00-3.12 1.8h-.08V4.83H29v10.61h2.03V10c0-2 1.05-3.46 2.63-3.5 1.5-.04 2.37 1.03 2.37 2.64v6.3h2.04V9.82c0-2.38 1.4-3.32 2.62-3.32 1.48 0 2.36 1.03 2.36 2.64v6.3h2.03V8.92c0-2.57-1.46-4.37-3.96-4.37zm6.71 8.15c0 1.73.98 2.74 2.8 2.74h2v-1.97h-1.7c-.69 0-1.07-.39-1.07-1.05V0h-2.03v12.7zM28.9 19.69h-.08a4.64 4.64 0 00-3.8-1.83c-3.14-.05-5.39 2.28-5.39 5.56 0 3.3 2.3 5.63 5.38 5.59a4.53 4.53 0 003.8-1.94h.1v1.64h2V18.15h-2v1.54zm-3.6 7.36a3.5 3.5 0 01-3.63-3.63c0-2 1.41-3.62 3.64-3.62a3.48 3.48 0 013.57 3.62 3.5 3.5 0 01-3.57 3.63zM44.2 22c-.48-2.4-2.6-4.14-5.39-4.14a5.4 5.4 0 00-5.6 5.56 5.42 5.42 0 005.6 5.59c2.79 0 4.9-1.8 5.4-4.2h-2.12a3.32 3.32 0 01-3.25 2.26 3.5 3.5 0 01-3.6-3.65c0-2 1.41-3.62 3.6-3.62 1.62 0 2.82.95 3.25 2.2h2.12zm10.88-2.31H55a4.64 4.64 0 00-3.8-1.83c-3.14-.05-5.39 2.28-5.39 5.56 0 3.3 2.3 5.63 5.38 5.59a4.53 4.53 0 003.8-1.94h.1v1.64h2V18.15h-2v1.54zm-3.6 7.36a3.5 3.5 0 01-3.63-3.63c0-2 1.41-3.62 3.64-3.62a3.48 3.48 0 013.57 3.62 3.5 3.5 0 01-3.57 3.63zm17.17-7.25h-.08a4.62 4.62 0 00-3.81-1.95c-3.09-.04-5.38 2.29-5.38 5.6 0 3.28 2.25 5.6 5.4 5.56 1.67-.02 3-.77 3.77-1.84h.1v1.54h2.02V13.36h-2.02v6.44zm-3.6 7.27a3.5 3.5 0 01-3.63-3.63c0-2 1.41-3.62 3.64-3.62a3.5 3.5 0 013.57 3.62c0 2-1.41 3.63-3.57 3.63zm13.28-9.21a5.4 5.4 0 00-5.48 5.58c0 3 2.1 5.57 5.52 5.57 2.49 0 4.48-1.35 5.18-3.59h-2.12c-.47 1-1.6 1.65-2.97 1.65-1.93 0-3.3-1.28-3.45-2.92h8.76c.28-3.52-1.93-6.3-5.44-6.3zm-.04 1.94a3.2 3.2 0 013.27 2.55h-6.5a3.18 3.18 0 013.23-2.55zm19.91-1.92a3.9 3.9 0 00-3.56 2.04h-.06a3.6 3.6 0 00-3.36-2.04 3.6 3.6 0 00-3.13 1.79h-.08v-1.52h-1.95v10.56h2.03v-5.42c0-1.98 1.05-3.43 2.64-3.47 1.5-.05 2.37 1.02 2.37 2.62v6.27h2.04v-5.59c0-2.37 1.41-3.3 2.63-3.3 1.48 0 2.36 1.02 2.36 2.62v6.27h2.03v-6.48c0-2.56-1.46-4.35-3.96-4.35zm11.24 9.14l-3.64-8.87h-2.25l4.84 11.56-.02.04c-.34.88-.73 1.2-1.67 1.2h-2.5v2.02h2.5c1.84 0 2.83-.83 3.51-2.62l4.67-12.2h-2.08l-3.36 8.87z" fill="#000"/></svg>
                 </a>
             </div>
         </footer>
+    </div>
     </body>
 </html>

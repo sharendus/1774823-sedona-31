@@ -1,0 +1,198 @@
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --background-grey: #F2F2F2;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+  --advantage-grey: #EEEEEE;
+  --brown-hover: #604E43;
+  --brown-active: #503E33;
+  --blue-hover: #669EC0;
+  --blue-active: #5496BD;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.page-body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--background-grey);
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.main-navigation {
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-link {
+  color: var(--basic-black);
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-contacts-link {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
+  display: block;
+}
+
+.social-button:hover {
+  background-color: var(--blue-hover);
+}
+
+.social-button:active {
+  background-color: var(--blue-active);
+}
+
+.social-button:active svg {
+  opacity: 0.3;
+}
+
+.footer-copyright-by {
+  line-height: 26px;
+}
+
+.footer-copyright-link path {
+  fill: var(--basic-black);
+}
+
+.footer-copyright-link:hover path {
+  fill: var(--basic-blue);
+}
+
+.footer-copyright-link:active path {
+  fill: #BDBBBC;
+}
+
+.promo {
+  text-align: center;
+  background-image: url("img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.promo::after {
+}
+
+.promo-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.promo-subtitle {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.advantage {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.advantage-title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.advantages-list, .feature-list {
+  list-style: none;
+}
+
+.advantage-item {
+  background-color: var(--advantage-grey);
+}
+
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.search-description {
+  line-height: 24px;
+}
+
+.search-button {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-button:hover {
+  background-color: var(--brown-hover);
+}
+
+.search-button:active {
+  background-color: var(--brown-active);
+  color: rgba(255,255,255,0.3);
+}
+
+
+.filters {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: var(--basic-white);
+}
+
+
+.filters-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters-item {
+  list-style: none;
+}
+
+
+.results {
+  font-size:
+}
