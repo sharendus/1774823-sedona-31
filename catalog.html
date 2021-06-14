@@ -17,16 +17,16 @@
                     <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона"/>
                 </a>
                 <ul class="site-navigation">
-                    <li><a class="site-navigation-link" href="#">Информация</a></li>
-                    <li><a class="site-navigation-link" href="#">Фото и видео</a></li>
-                    <li><a class="site-navigation-link" href="#">Карта штата</a></li>
-                    <li><a class="site-navigation-link navigation-link-active" href="#">Гостиницы</a></li>
+                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Информация</a></li>
+                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+                    <li class="site-navigation-item state-map"><a class="site-navigation-link" href="#">Карта штата</a></li>
+                    <li class="site-navigation-item"><a class="site-navigation-link navigation-link-active" href="#">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <h1>Каталог гостиниц</h1>
+            <h1 class="catalog-title">Каталог гостиниц</h1>
 
             <section class="filters" aria-label="фильтры">
 
@@ -49,6 +49,7 @@
                             </li>
                         </ul>
                     </fieldset>
+
                     <fieldset class="filters-field">
                         <legend class="filters-title">Тип жилья:</legend>
                         <ul class="filters-list">
@@ -66,17 +67,23 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="filters-field">
+
+                    <div>
+                      <fieldset class="filters-field">
                         <legend class="filters-title">Стоимость в сутки, ₽:</legend>
                         <label>от<input type="number" name="min-interval" value="0" min="0" max="3000" /></label>
                         <label>До<input type="number" name="max-interval" value="3000" min="0" max="3000" /></label>
-                    </fieldset>
+                      </fieldset>
                     <button class="filters-button" type="submit">Показать</button>
+                  </div>
+
                 </form>
             </section>
             <section class="results">
-                <div>
-                  <h2>Результаты поиска</h2>
+
+
+                <div class="qqqq">
+                  <h2 class="catalog-title">Результаты поиска</h2>
                   <p class="results-count">Найдено: 3</p>
 
                   <span class="sorting-title">Сортировка:</span>
@@ -86,16 +93,17 @@
                         <li><a class="sorting-link" href="#">По рейтингу</a></li>
                     </ul>
                     <ul class="arrows">
-                        <li><a class="triangle-bottom arrow-active" href="#" aria-label="от меньшего"></a></li>
-                        <li><a class="triangle-top " href="#" aria-label="от большего"></a></li>
+                        <li><a class="decrease arrow-active" href="#" aria-label="от меньшего"></a></li>
+                        <li><a class="increase" href="#" aria-label="от большего"></a></li>
                     </ul>
                 </div>
-
                 <ul class="options-list">
                     <li class="options-item">
                         <a href="#" class="options-img">
                             <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница Амара курорт и спа" />
                         </a>
+
+
                         <div class="options-content">
                             <a href="#">
                                 <h2 class="options-title">Amara Resort & Spa</h2>
@@ -166,24 +174,24 @@
 
         <footer class="main-footer">
             <div class="footer-contacts" aria-label="Контакты">
-                <a class="footer-contacts-link" href="#">#visitSEDONA</a>
-                <a class="footer-contacts-link" href="tel:+78005558628">+7 800 555-86-28</a>
+                <p><a class="footer-contacts-link" href="#">#visitSEDONA</a></p>
+                <p><a class="footer-contacts-link" href="tel:+78005558628">+7 800 555-86-28</a></p>
             </div>
 
             <ul class="footer-social" aria-label="Социальные сети">
-                <li>
+                <li class="footer-social-item">
                     <a class="social-button" href="#" aria-label="Твитер">
-                        <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1.1c1.6-.5 3 .3 3.5 1.2l2-.7c0 .7-.3 1.3-.8 1.8.7.2 1.3-.5 1.3-.5a3 3 0 01-1.6 2c-.2 6.8-3.2 11.2-10 11.1h-.5c-.4 0-4.2-.5-4.9-1.9 2.3.2 3.9-.4 4.7-1.2-1-.3-2.7-.4-3-3 .4.2.6.3 1.2.2C1.7 9.2.4 8.5.4 6.3c.3.4 1.1.6 1.4.5-.7-.2-2-3.4-1-5 2 1.9 3.8 3.7 7.2 3.8.3-2.3 1.2-3.8 3-4.5z" fill="#fff"/></svg>
+                        <svg class="footer-copyright-svg" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1.1c1.6-.5 3 .3 3.5 1.2l2-.7c0 .7-.3 1.3-.8 1.8.7.2 1.3-.5 1.3-.5a3 3 0 01-1.6 2c-.2 6.8-3.2 11.2-10 11.1h-.5c-.4 0-4.2-.5-4.9-1.9 2.3.2 3.9-.4 4.7-1.2-1-.3-2.7-.4-3-3 .4.2.6.3 1.2.2C1.7 9.2.4 8.5.4 6.3c.3.4 1.1.6 1.4.5-.7-.2-2-3.4-1-5 2 1.9 3.8 3.7 7.2 3.8.3-2.3 1.2-3.8 3-4.5z" fill="#fff"/></svg>
                     </a>
                 </li>
-                <li>
+                <li class="footer-social-item">
                     <a class="social-button" href="#" aria-label="Фейсбук">
-                        <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
+                        <svg class="footer-copyright-svg" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
                     </a>
                 </li>
-                <li>
+                <li class="footer-social-item">
                     <a class="social-button" href="#" aria-label="Ютуб">
-                        <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3 4v8l9-4-9-4z" fill="#fff"/></svg>
+                        <svg class="footer-copyright-svg"  width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3 4v8l9-4-9-4z" fill="#fff"/></svg>
                     </a>
                 </li>
             </ul>
