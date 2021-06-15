@@ -20,10 +20,10 @@
                 </a>
 
                 <ul class="site-navigation">
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Информация</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
-                    <li class="site-navigation-item state-map"><a class="site-navigation-link" href="#">Карта штата</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Гостиницы</a></li>
+                    <li class="site-navigation-item site-navigation-information"><a class="site-navigation-link" href="#">Информация</a></li>
+                    <li class="site-navigation-item site-navigation-photo"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+                    <li class="site-navigation-item site-navigation-map"><a class="site-navigation-link" href="#">Карта штата</a></li>
+                    <li class="site-navigation-item site-navigation-hotels"><a class="site-navigation-link" href="catalog.html">Гостиницы</a></li>
                 </ul>
 
             </nav>
@@ -31,7 +31,9 @@
 
         <main class="main-container">
             <section class="promo">
-                <img src="img/promo.svg" width="456" height="350" alt="Промо">
+                <div class="promo-background">
+                  <img src="img/promo.svg" width="456" height="350" alt="Промо">
+                </div>
                 <h1 class="promo-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                 <p class="promo-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </section>
@@ -43,31 +45,31 @@
                         <p class="advantage-number">— №1 —</p>
                         <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                     </div>
-                    <img src="img/image.jpg" width="800" height="256" alt="изображение города" />
+                    <img class="advantage-img" src="img/image.jpg" width="800" height="256" alt="изображение города" />
                 </article>
 
                 <ul class="feature-list">
-                    <li class="feature-item">
-                        <h2>Жильё</h2>
-                        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    <li class="feature-item feature-hotels">
+                        <h2 class="feature-title">Жильё</h2>
+                        <p class="feature-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                     </li>
-                    <li class="feature-item">
-                        <h2>Еда</h2>
-                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <li class="feature-item feature-eat">
+                        <h2 class="feature-title">Еда</h2>
+                        <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </li>
-                    <li class="feature-item">
-                        <h2>Сувениры</h2>
-                        <p>Не только китайского, но и местного производства!</p>
+                    <li class="feature-item feature-souvenirs">
+                        <h2 class="feature-title">Сувениры</h2>
+                        <p class="feature-description">Не только китайского, но и местного производства!</p>
                     </li>
                 </ul>
 
                 <article class="advantage">
-                    <div class="advantage-wrapper bri">
+                    <div class="advantage-wrapper">
                         <h2 class="advantage-title">Там есть Мост дьявола</h2>
                         <p class="advantage-number">— №2 —</p>
                         <p class="advantage-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
-                    <img src="img/image-2.jpg" width="800" height="256" alt="изображение моста"/>
+                    <img class="advantage-img" src="img/image-2.jpg" width="800" height="256" alt="изображение моста"/>
                 </article>
 
                 <ul class="advantages-list">

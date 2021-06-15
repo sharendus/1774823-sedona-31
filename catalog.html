@@ -12,16 +12,20 @@
     <body class="page-body">
         <div class="container">
         <header class="main-header">
+
             <nav class="main-navigation">
+
                 <a class="main-header-logo" href="index.html">
                     <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона"/>
                 </a>
+
                 <ul class="site-navigation">
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Информация</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
-                    <li class="site-navigation-item state-map"><a class="site-navigation-link" href="#">Карта штата</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link navigation-link-active" href="#">Гостиницы</a></li>
+                    <li class="site-navigation-item site-navigation-information"><a class="site-navigation-link" href="#">Информация</a></li>
+                    <li class="site-navigation-item site-navigation-photo"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+                    <li class="site-navigation-item site-navigation-map"><a class="site-navigation-link" href="#">Карта штата</a></li>
+                    <li class="site-navigation-item site-navigation-hotels"><a class="site-navigation-link navigation-link-active" href="#">Гостиницы</a></li>
                 </ul>
+
             </nav>
         </header>
 
@@ -36,16 +40,16 @@
                         <legend class="filters-title">Инфраструктура:</legend>
                         <ul class="filters-list">
                             <li class="filters-item">
-                                <input id="pool" type="checkbox" name="pool" checked />
-                                <label for="pool">Бассейн</label>
+                                <input class="checkbox-filters" id="pool" type="checkbox" name="pool" checked />
+                                <label class="checkbox-title-on" for="pool">Бассейн</label>
                             </li>
                             <li class="filters-item">
-                                <input id="parking" type="checkbox" name="parking" />
-                                <label for="parking">Парковка</label>
+                                <input class="checkbox-filters" id="parking" type="checkbox" name="parking" />
+                                <label class="checkbox-title-off" for="parking">Парковка</label>
                             </li>
                             <li class="filters-item">
-                                <input id="wi-Fi" type="checkbox" name="wi-Fi" />
-                                <label for="wi-Fi">Wi-Fi</label>
+                                <input class="checkbox-filters" id="wi-Fi" type="checkbox" name="wi-Fi" />
+                                <label class="checkbox-title-off" for="wi-Fi">Wi-Fi</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -79,6 +83,18 @@
 
                 </form>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
             <section class="results">
 
 
