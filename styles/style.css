@@ -17,6 +17,7 @@
     --black-transparent: rgba(0, 0, 0, 0.3);
     --border-grey: #e5e5e5;
     --black-footer-transparent: rgba(0, 0, 0, 0.1);
+    --box-shadow-container: rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -44,13 +45,13 @@ img {
 .container {
     width: 100%;
     max-width: 1200px;
-    min-width: 1200px;
     margin: 0 auto;
     background-color: var(--basic-white);
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     height: 100%;
     min-height: 100%;
+    box-shadow: var(--box-shadow-container) 0px 5px 15px ;
 }
 
 /*header*/
@@ -261,7 +262,7 @@ img {
     font-weight: 700;
     margin: 0 auto;
     margin-bottom: 25px;
-    width: 150px;
+    width: 160px;
 }
 
 .advantage-number {
