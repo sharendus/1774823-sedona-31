@@ -39,11 +39,12 @@ img {
     text-transform: uppercase;
     background-color: var(--background-grey);
     text-align: center;
-    min-width: 1200px;
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
     background-color: var(--basic-white);
     display: grid;
@@ -67,15 +68,16 @@ img {
     padding-right: 72px;
 }
 
-.site-navigation-information,
-.site-navigation-photo {
+.site-navigation-item:nth-child(4n-3),
+.site-navigation-item:nth-child(4n-2) {
   text-align: left;
 }
 
-.site-navigation-map,
-.site-navigation-hotels {
+.site-navigation-item:nth-child(4n-1),
+.site-navigation-item:nth-child(4n) {
   text-align: right;
 }
+
 
 .main-header-logo {
     position: absolute;
@@ -247,7 +249,6 @@ img {
     background-color: var(--basic-blue);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    overflow: hidden;
 }
 
 .advantage-wrapper,
@@ -272,11 +273,11 @@ img {
   margin: 0 auto;
 }
 
-.advantage-img{
+/*.advantage-img{
   width: auto;
   height: 100%;
   overflow: hidden;
-}
+}*/
 
 
 .advantages-list,
@@ -434,11 +435,15 @@ img {
 
 
 
-.qqqq {
+.results-wrapper{
     display: grid;
-    grid-template-columns: 1fr min-content 1fr 1fr;
-    grid-auto-rows: 86px;
+    grid-template-columns: min-content min-content 1fr 1fr;
     border-bottom: var(--border-grey) solid 1px;
+    margin: 0;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 73px;
+    padding-right: 113px;
 }
 
 .sorting-link {
@@ -452,26 +457,29 @@ img {
 }
 
 .sorting-title {
-    margin: auto;
 }
 
 .results-count {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    margin-left: 73px;
-    margin-top: 29px;
+    margin: 0;
+    width: 117px;
+    margin-right: 46px;
 }
 
 .sorting-title {
     font-size: 12px;
     line-height: 18px;
+    margin-right: 40px;
 }
 
 .sorting {
     font-size: 12px;
     line-height: 18px;
     list-style: none;
+    margin: 0;
+    text-align: left;
 }
 
 .sorting-link {
@@ -498,6 +506,11 @@ img {
 
 .arrows {
     list-style: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    column-gap: 12px;
+    padding: 0;
 }
 
 .increase {
@@ -506,6 +519,7 @@ img {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 11px solid var(--arrow-grey);
+    display: block;
 }
 
 .decrease {
@@ -514,6 +528,7 @@ img {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 11px solid var(--arrow-grey);
+    display: block;
 }
 
 .decrease.arrow-active {
@@ -540,8 +555,28 @@ img {
     border-top: 11px solid var(--basic-blue);
 }
 
+
+
+
+
+
+
 .options-list {
     list-style: none;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 73px;
+    padding-right: 71px;
+}
+
+.options-item {
+  display: grid;
+  grid-template-columns: 165px 1fr 200px;
+}
+
+.options-content {
+  text-align: left;
 }
 
 .options-title {
@@ -549,7 +584,18 @@ img {
     line-height: 26px;
     font-weight: 700;
     color: var(--basic-black);
+    margin: 0;
+    margin-bottom: 7px;
 }
+
+.options-type {
+  margin: 0;
+}
+
+.options-price {
+  margin: 0;
+}
+
 
 .link-more,
 .link-book {
