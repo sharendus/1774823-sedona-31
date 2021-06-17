@@ -29,7 +29,7 @@
         </header>
 
         <main>
-            <h1 class="catalog-title">Каталог гостиниц</h1>
+            <h1 class="visually-hidden">Каталог гостиниц</h1>
 
             <section class="filters" aria-label="фильтры">
 
@@ -39,16 +39,16 @@
                         <legend class="filters-title">Инфраструктура:</legend>
                         <ul class="filters-list">
                             <li class="filters-item">
-                                <input class="checkbox-filters" id="pool" type="checkbox" name="pool" checked />
-                                <label class="checkbox-title-on" for="pool">Бассейн</label>
+                                <input class="checkbox-filters visually-hidden" id="pool" type="checkbox" name="pool" checked />
+                                <label class="checkbox-title" for="pool">Бассейн</label>
                             </li>
                             <li class="filters-item">
-                                <input class="checkbox-filters" id="parking" type="checkbox" name="parking" />
-                                <label class="checkbox-title-off" for="parking">Парковка</label>
+                                <input class="checkbox-filters visually-hidden" id="parking" type="checkbox" name="parking" />
+                                <label class="checkbox-title" for="parking">Парковка</label>
                             </li>
                             <li class="filters-item">
-                                <input class="checkbox-filters" id="wi-Fi" type="checkbox" name="wi-Fi" />
-                                <label class="checkbox-title-off" for="wi-Fi">Wi-Fi</label>
+                                <input class="checkbox-filters visually-hidden" id="wi-Fi" type="checkbox" name="wi-Fi" />
+                                <label class="checkbox-title" for="wi-Fi">Wi-Fi</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -57,16 +57,16 @@
                         <legend class="filters-title">Тип жилья:</legend>
                         <ul class="filters-list">
                             <li class="filters-item">
-                                <input id="hotel" type="checkbox" name="hotel" checked />
-                                <label for="hotel">Гостиница</label>
+                                <input class="checkbox-filters visually-hidden" id="hotel" type="checkbox" name="hotel" checked />
+                                <label class="checkbox-title" cfor="hotel">Гостиница</label>
                             </li>
                             <li class="filters-item">
-                                <input id="motel" type="checkbox" name="motel" checked />
-                                <label for="motel">Мотель</label>
+                                <input class="checkbox-filters visually-hidden" id="motel" type="checkbox" name="motel" checked />
+                                <label class="checkbox-title" for="motel">Мотель</label>
                             </li>
                             <li class="filters-item">
-                                <input id="apartments" type="checkbox" name="apartments" checked />
-                                <label for="apartments">Апартаменты</label>
+                                <input class="checkbox-filters visually-hidden" id="apartments" type="checkbox" name="apartments" checked />
+                                <label class="checkbox-title" for="apartments">Апартаменты</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -86,7 +86,7 @@
             <section class="results">
 
                 <div class="results-wrapper">
-                  <h2 class="catalog-title">Результаты поиска</h2>
+                  <h2 class="visually-hidden">Результаты поиска</h2>
                   <p class="results-count">Найдено: 3</p>
 
                   <span class="sorting-title">Сортировка:</span>
