@@ -475,12 +475,6 @@ img {
     left: -43px;
 }
 
-
-
-
-
-
-
 .results-wrapper{
     display: grid;
     grid-template-columns: min-content min-content 1fr 110px;
@@ -601,12 +595,6 @@ img {
 .decrease:active {
     border-top: 11px solid var(--basic-blue);
 }
-
-
-
-
-
-
 
 .options-list {
     list-style: none;
