@@ -613,13 +613,27 @@ img {
 
 .range-controls {
   position: relative;
-  height: 21px;
+  height: 20px;
   background-color: transparent;
-  margin-bottom: 13px;
+  margin-bottom: 33px;
   padding-top: 19px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
+
+
+.toggle {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 9px solid var(--basic-white);
+  background-color: var(--toggle-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--toggle-grey);
+  cursor: pointer;
+}
+
 
 .scale {
   height: 2px;
@@ -632,19 +646,7 @@ img {
   background-color: var(--basic-white);
 }
 
-.toggle {
-  position: absolute;
-  top: 9px;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 0;
-  border: 9px solid var(--basic-white);
-  background-color: var(--toggle-grey);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 var(--toggle-grey);
-  cursor: pointer;
-}
+
 
 .toggle-max {
   left: 235px;
