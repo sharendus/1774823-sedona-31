@@ -18,6 +18,7 @@
     --border-grey: #e5e5e5;
     --black-footer-transparent: rgba(0, 0, 0, 0.1);
     --box-shadow-container: rgba(0, 1, 1, 0.2);
+    --box-shadow-search-form: rgba(0, 1, 1, 0.15);
     --toggle-grey: #ABABAB;
     --minus-grey: #A9A9A9;
 }
@@ -103,8 +104,24 @@ img {
 }
 
 .site-navigation-item {
-  width: 264px;
+  width: 20%;
   text-align: left;
+}
+
+.site-navigation-item:nth-child(4n-3) {
+  margin-right: 3%;
+}
+
+.site-navigation-item:nth-child(4n) {
+  margin-left: 3%;
+}
+
+.site-navigation-item:nth-child(4n-2) {
+  margin-right: 7%;
+}
+
+.site-navigation-item:nth-child(4n-1) {
+  margin-left: 7%;
 }
 
 .site-navigation-item:nth-child(4n-1),
@@ -147,6 +164,16 @@ img {
     display: flex;
 }
 
+.footer-contacts {
+  width: 100%;
+    padding-top: 23px;
+    padding-bottom: 27px;
+}
+
+.footer-contacts-wrapper {
+  margin-bottom: 9px;
+}
+
 .footer-contacts-link {
     color: var(--basic-black);
     font-weight: 700;
@@ -161,25 +188,23 @@ img {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    padding-top: 53px;
-    padding-bottom: 53px;
-    width: 400px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    width: 100%;
 }
 
 .footer-social-item {
-  margin-right: 6px;
+  margin: 3px;
 }
 
-.footer-contacts {
-  width: 400px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-}
 
 .footer-copyright {
-  width: 400px;
+  width: 100%;
     padding-top: 43px;
     padding-bottom: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-button {
@@ -212,11 +237,9 @@ img {
 
 .footer-copyright-by {
     line-height: 26px;
+    margin-right: 15px;
 }
 
-.copyright-by-active {
-    color: var(--black-footer-transparent);
-}
 
 .footer-copyright-link path {
     fill: var(--basic-black);
@@ -388,6 +411,7 @@ img {
 .search-form-container {
   padding: 55px;
   font-weight: 700;
+  box-shadow: 0px 7px 15px var(--box-shadow-search-form);
 }
 
 .search-title {
@@ -419,6 +443,7 @@ img {
     padding-bottom: 30px;
 }
 
+
 .arrival-date-inp,
 .leaving-date-inp {
   margin: 0;
@@ -431,7 +456,16 @@ img {
   margin-bottom: 29px;
   font-size: 14px;
   font-weight: 700;
+  padding-left: 12px;
 }
+
+.arrival-date-inp::placeholder,
+.leaving-date-inp::placeholder,
+.inp-search-age::placeholder {
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
 
 .hotel-search-age {
   display: flex;
@@ -447,21 +481,18 @@ img {
   border-radius: 0;
   border: none;
   background-color: var(--background-grey);
+  cursor: pointer;
 }
 
 .inp-search-age {
   height: 38px;
-    padding: 0;
-    margin: 0;
-    width: 38px;
-    border: none;
-    background-color: var(--background-grey);
-    text-align: center;
-}
-
-.search-form input:placeholder-shown {
-  color: var(--basic-black);
-  opacity: 1;
+  padding: 0;
+  margin: 0;
+  width: 38px;
+  border: none;
+  background-color: var(--background-grey);
+  text-align: center;
+  font-weight: 700;
 }
 
 .age {
@@ -475,9 +506,26 @@ img {
   display: block;
   position: absolute;
   background-color: var(--minus-grey);
-  right: 13px;
   cursor: pointer;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
+
+.btn-search-age:nth-of-type(2n):before {
+  content: "";
+  width: 3px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  background-color: var(--minus-grey);
+  cursor: pointer;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 15px;
+}
+
 
 .search-button:hover {
     background-color: var(--brown-hover);
@@ -511,6 +559,7 @@ img {
 .filters {
     background: url("../img/background.jpg") no-repeat center;
     color: var(--basic-white);
+    background-size: cover;
 }
 
 .filters-form {
@@ -527,6 +576,14 @@ img {
     padding: 0;
     text-align: left;
     margin-right: 119px;
+}
+
+.right-filters-wrapper {
+  margin-left: auto;
+}
+
+.filters-field-right {
+  margin: 0;
 }
 
 .range-filter {
@@ -656,6 +713,8 @@ img {
     border: 2px solid var(--basic-white);
     color: var(--basic-white);
     cursor: pointer;
+    text-transform: uppercase;
+    padding: 7px 35px;
 }
 
 .checkbox-title {
