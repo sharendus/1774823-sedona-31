@@ -413,6 +413,7 @@ img {
 
 .search-form-container {
     display: none;
+    position: relative;
     width: 568px;
     margin: 0 auto;
     font-weight: 700;
@@ -421,6 +422,9 @@ img {
 
 .search-form {
     padding: 55px;
+    position: absolute;
+    box-shadow: 0px 7px 15px var(--box-shadow-search-form);
+    background-color: var(--basic-white);
 }
 
 .date-container {
@@ -594,7 +598,6 @@ img {
 
 .map {
     grid-column: 1/4;
-    width: 1199px;
     height: 594px;
 }
 
