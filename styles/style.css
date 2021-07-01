@@ -604,6 +604,7 @@ img {
 .map-image {
     display: block;
     width: 100%;
+    max-width: 1200px;
 }
 
 .map-frame {
@@ -676,7 +677,7 @@ img {
     position: relative;
     height: 20px;
     background-color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     padding-top: 20px;
 }
 
@@ -711,6 +712,7 @@ img {
 
 .price-controls {
     border: 2px solid;
+    border-radius: 2px;
     padding-top: 6px;
     padding-bottom: 6px;
     display: flex;
@@ -762,6 +764,7 @@ img {
 }
 
 .filters-button {
+  display: block;
     font-size: 14px;
     line-height: 21px;
     background-color: transparent;
@@ -770,6 +773,9 @@ img {
     cursor: pointer;
     text-transform: uppercase;
     padding: 7px 35px;
+    margin-left: 83px;
+    margin-bottom: 6px;
+    border-radius: 2px;
 }
 
 .checkbox-title {
@@ -799,7 +805,7 @@ img {
     border-bottom: var(--border-grey) solid 1px;
     margin: 0;
     padding-top: 31px;
-    padding-bottom: 31px;
+    padding-bottom: 29px;
     padding-left: 73px;
     padding-right: 73px;
 }
@@ -881,6 +887,7 @@ img {
     border-right: 5px solid transparent;
     border-bottom: 11px solid var(--arrow-grey);
     display: block;
+    margin-top: 8px;
 }
 
 .decrease {
@@ -890,6 +897,7 @@ img {
     border-right: 5px solid transparent;
     border-top: 11px solid var(--arrow-grey);
     display: block;
+    margin-top: 8px;
 }
 
 .decrease.arrow-active {
@@ -927,9 +935,9 @@ img {
 .options-item {
     display: grid;
     grid-template-columns: 165px 1fr 200px;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 73px;
+    padding-left: 58px;
     padding-right: 70px;
     border-bottom: var(--border-grey) solid 1px;
 }
