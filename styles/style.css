@@ -160,6 +160,7 @@ img {
     z-index: 1;
     padding-left: 50px;
     padding-right: 50px;
+    height: 120px;
 }
 
 .main-footer-over {
@@ -935,8 +936,9 @@ img {
 .options-item {
     display: grid;
     grid-template-columns: 165px 1fr 200px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    grid-gap: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     padding-left: 58px;
     padding-right: 70px;
     border-bottom: var(--border-grey) solid 1px;
@@ -953,6 +955,10 @@ img {
     color: var(--basic-black);
     margin: 0;
     margin-bottom: 7px;
+}
+
+.options-img {
+  padding-top: 6px;
 }
 
 .options-content-description {
@@ -981,6 +987,7 @@ img {
 
 .link-more {
     background-color: var(--basic-blue);
+    padding-bottom: 3px;
 }
 
 .link-more:hover {
@@ -1008,7 +1015,6 @@ img {
 .options-aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .star-list {
@@ -1017,7 +1023,8 @@ img {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 47px;
-    padding-right: 5px;
+    margin-top: 5px;
+    padding-right: 8px;
 }
 
 .star {
@@ -1028,8 +1035,7 @@ img {
     border-bottom: 7px solid var(--basic-blue);
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    margin-left: 15px;
-    margin-left: 25px;
+    margin-left: 18px;
 }
 .star:before,
 .star:after {
@@ -1061,5 +1067,6 @@ img {
     max-width: 110px;
     margin: 0;
     width: 100%;
-    margin-left: auto;
+    margin-left: 88px;
+    padding: 3px 0;
 }
