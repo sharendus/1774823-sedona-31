@@ -170,7 +170,7 @@ img {
     z-index: 1;
     padding-left: 50px;
     padding-right: 50px;
-    height: 120px;
+    min-height: 120px;
 }
 
 .main-footer-over {
@@ -328,6 +328,7 @@ img {
 .advantage-item {
     padding: 47px 71px;
     padding-bottom: 54px;
+    background-color: var(--advantage-grey);
 }
 
 .advantage-title {
@@ -345,6 +346,10 @@ img {
 
 .advantage-description {
     margin: 0 auto;
+}
+
+.advantage-img {
+  object-fit: cover;
 }
 
 .advantages-list,
@@ -413,16 +418,13 @@ img {
     margin: 0;
 }
 
-.advantage-item {
-    background-color: var(--advantage-grey);
-}
-
 .search {
     grid-column: 1/4;
     padding-top: 56px;
 }
 
 .search-form-container {
+    display: none;
     position: relative;
     width: 568px;
     margin: 0 auto;
