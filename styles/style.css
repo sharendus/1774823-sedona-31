@@ -38,18 +38,17 @@
     src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: overlay;
 }
 
 a {
@@ -61,9 +60,25 @@ img {
     height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type=checkbox].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden
+}
+
 .page-body {
     margin: 0;
     padding: 0;
+    overflow: overlay;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -77,6 +92,7 @@ img {
 .container {
     width: 100%;
     max-width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
     background-color: var(--basic-white);
     display: grid;
