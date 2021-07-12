@@ -332,7 +332,7 @@ img {
 }
 
 .advantage-title {
-  display: block;
+    display: block;
     font-size: 21px;
     font-weight: 700;
     margin: 0 auto;
@@ -350,7 +350,7 @@ img {
 }
 
 .advantage-img {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .advantages-list,
@@ -425,7 +425,6 @@ img {
 }
 
 .search-form-container {
-    display: none;
     position: relative;
     width: 568px;
     margin: 0 auto;
@@ -445,11 +444,9 @@ img {
     position: relative;
 }
 
-
-
 .arrival-date,
 .leaving-date {
-    margin-right: 15px;
+    margin-right: 17px;
 }
 
 .arrival-date-inp,
@@ -483,6 +480,12 @@ img {
 .inp-search-age::placeholder {
     color: var(--basic-black);
     text-transform: uppercase;
+}
+
+.inp-search-age::-webkit-outer-spin-button,
+.inp-search-age::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .button-calendar {
@@ -563,11 +566,14 @@ img {
 }
 
 .search-title {
+    display: block;
+    width: 300px;
     font-size: 30px;
     line-height: 24px;
     font-weight: 700;
     margin: 0 auto;
     margin-bottom: 32px;
+    margin-left: 445px;
 }
 
 .search-description {
@@ -578,7 +584,7 @@ img {
 }
 
 .search-description-text {
-  display: block;
+    display: block;
 }
 
 .search-button {
@@ -829,6 +835,18 @@ img {
     color: var(--basic-white);
     width: 50%;
     outline: none;
+}
+
+.min-price-inp::-webkit-outer-spin-button,
+.min-price-inp::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.max-price-inp::-webkit-outer-spin-button,
+.max-price-inp::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .filters-list {
@@ -1123,6 +1141,7 @@ img {
 
 .link-book {
     background-color: var(--basic-brown);
+    margin-right: 3px;
 }
 
 .link-book:hover,
