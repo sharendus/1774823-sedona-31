@@ -488,6 +488,10 @@ img {
     margin: 0;
 }
 
+.inp-search-age[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .button-calendar {
     position: absolute;
     width: 21px;
@@ -847,6 +851,11 @@ img {
 .max-price-inp::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.max-price-inp[type="number"],
+.min-price-inp[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .filters-list {
