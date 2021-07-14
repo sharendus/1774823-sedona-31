@@ -22,6 +22,7 @@
     --toggle-grey: #ababab;
     --minus-grey: #a9a9a9;
     --input-grey: #ebebeb;
+    --background-map: #e0edbc;
 }
 
 @font-face {
@@ -692,12 +693,7 @@ img {
     grid-column: 1/4;
     height: 594px;
     background-image: url(../img/map.png);
-}
-
-.map-image {
-    display: block;
-    width: 100%;
-    max-width: 1200px;
+    background-color: var(--background-map);
 }
 
 .map-frame {
